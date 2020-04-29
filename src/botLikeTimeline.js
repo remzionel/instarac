@@ -79,6 +79,7 @@ const Excute = async function(User, sleep){
             var media = await feed.get(1);
             media = _.chunk(media, 10);
             for (var i = 0; i < media.length; i++) {
+                Sleep = Sleep + (i * 5)
                 await Promise.all(media[i].map(async (media) => {
                     const doLike = await Like(doLogin.session, media);
                     console.log(chalk`[{bold.green Username:}] ${media.params.user.username}\n[{cyan ${media.id}}] => [${doLike}]`);
@@ -94,16 +95,7 @@ const Excute = async function(User, sleep){
 
 console.log(chalk`
  {bold.cyan
-  —————————————————— [INFORMATION] ————————————————————
-
-  [?] {bold.green Bot Like Timeline}
-
-  ——————————————————  [THANKS TO]  ————————————————————
-  [✓] CODE BY CYBER SCREAMER CCOCOT (ccocot@bc0de.net)
-  [✓] FIXING & TESTING BY SYNTAX (@officialputu_id)
-  [✓] CCOCOT.CO | BC0DE.NET | NAONLAH.NET | WingkoColi
-  [✓] SGB TEAM REBORN | Zerobyte.id | ccocot@bc0de.net 
-  —————————————————————————————————————————————————————}
+  iltermedya.com.tr}
       `);
 
 inquirer.prompt(User)

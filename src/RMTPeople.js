@@ -276,29 +276,7 @@ const Excute = async function(User, target, startFrom, customCaption, Sleep){
 }
 console.log(chalk`
   {bold.cyan
-  —————————————————— [INFORMATION] ————————————————————
-
-  [!] {bold.green RMTPeople | Repost Media Target By People}
-
-  —————————————————————————————————————————————————————
-  
-  [?] Auto Repost Instagram Media Using People Target
-
-  [!] Edit {bold.yellow customCaption.txt} file before use
-      custom caption mode.
-  [!] If you choose 'yes' for using custom caption mode,
-      repost will use caption text from {bold.yellow customCaption.txt} file.
-  [!] Otherwise, if you choose 'no' repost will use original
-      caption from each media target.
-
-  ——————————————————  [THANKS TO]  ————————————————————
-  [✓] RMT BY MAS OKKY (@masokky_)
-  [✓] CODE BY CYBER SCREAMER CCOCOT (ccocot@bc0de.net)
-  [✓] FIXING & TESTING BY SYNTAX (@officialputu_id)
-  [✓] CCOCOT.CO | BC0DE.NET | NAONLAH.NET | WingkoColi
-  [✓] SGB TEAM REBORN | Zerobyte.id | ccocot@bc0de.net 
-  —————————————————————————————————————————————————————
-}
+  iltermedya.com.tr}
       `);
 inquirer.prompt(User)
 .then(answers => {

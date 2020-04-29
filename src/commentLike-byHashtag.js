@@ -121,6 +121,7 @@ const doMain = async (User, hastag, sleep, accountsPerDelay) => {
       var media = await feed.get();
       media = _.chunk(media, accountsPerDelay);
       for (media of media) {
+        Sleep = Sleep + (count * 5)
         var timeNow = new Date();
         timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
         await Promise.all(media.map(async(media)=>{
@@ -140,16 +141,7 @@ const doMain = async (User, hastag, sleep, accountsPerDelay) => {
 
 console.log(chalk`
   {bold.cyan
-  —————————————————— [INFORMATION] ————————————————————
-
-  [?] {bold.green Comment & Like | Using Hastag Target!}
-
-  ——————————————————  [THANKS TO]  ————————————————————
-  [✓] CODE BY CYBER SCREAMER CCOCOT (ccocot@bc0de.net)
-  [✓] FIXING & TESTING BY SYNTAX (@officialputu_id)
-  [✓] CCOCOT.CO | BC0DE.NET | NAONLAH.NET | WingkoColi
-  [✓] SGB TEAM REBORN | Zerobyte.id | ccocot@bc0de.net 
-  —————————————————————————————————————————————————————}
+  iltermedya.com.tr}
       `);
 //ikiganteng
 inquirer.prompt(question)

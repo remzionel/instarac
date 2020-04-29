@@ -127,13 +127,8 @@ const main = async () => {
 
 console.log(chalk`
   {bold.cyan
-  ╦┌┐┌┌─┐┌┬┐┌─┐┌─┐┬─┐┌─┐┌┬┐
-  ║│││└─┐ │ ├─┤│ ┬├┬┘├─┤│││
-  ╩┘└┘└─┘ ┴ ┴ ┴└─┘┴└─┴ ┴┴ ┴
-  ╔╦╗┌─┐┌─┐┬  ┌─┐    © 2019
-   ║ │ ││ ││  └─┐   SGBTeam 
-   ╩ └─┘└─┘┴─┘└─┘   -------       
+  INSTARAC © 2020 İlter Medya ---- iltermedya.com.tr
 }
-      `);
+`);
 
 main()

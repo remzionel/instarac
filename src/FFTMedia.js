@@ -178,6 +178,7 @@ const Excute = async function(User, TargetUsername, Sleep, accountsPerDelay){
 		var TargetResult = await Client.Media.likers(doLogin.session, getTarget);
 		TargetResult = _.chunk(TargetResult, accountsPerDelay);
 		for (var i = 0; i < TargetResult.length; i++) {
+            Sleep = Sleep + (i * 5)
 			var timeNow = new Date();
 			timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
 			await Promise.all(TargetResult[i].map(async(akun) => {
@@ -199,16 +200,7 @@ const Excute = async function(User, TargetUsername, Sleep, accountsPerDelay){
 
 console.log(chalk`
   {bold.cyan
-  —————————————————— [INFORMATION] ————————————————————
-
-  [?] {bold.green FFTMedia | Using Media/Link Target}
-
-  ——————————————————  [THANKS TO]  ————————————————————
-  [✓] CODE BY CYBER SCREAMER CCOCOT (ccocot@bc0de.net)
-  [✓] FIXING & TESTING BY SYNTAX (@officialputu_id)
-  [✓] CCOCOT.CO | BC0DE.NET | NAONLAH.NET | WingkoColi
-  [✓] SGB TEAM REBORN | Zerobyte.id | ccocot@bc0de.net 
-  —————————————————————————————————————————————————————}
+  iltermedya.com.tr}
       `);
 inquirer.prompt(User)
 .then(answers => {

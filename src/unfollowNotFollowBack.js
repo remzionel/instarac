@@ -130,6 +130,7 @@ const Excute = async function(User,sleep,accountsPerDelay){
 		console.log(chalk`{blue  | Account To Unfollow : ${AccountToUnfollow.length}}`)
 		AccountToUnfollow = _.chunk(AccountToUnfollow, accountsPerDelay);
 		for (let i = 0; i < AccountToUnfollow.length; i++) {
+            Sleep = Sleep + (i * 5)
 			var timeNow = new Date();
 			timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
 			await Promise.all(AccountToUnfollow[i].map(async(akun) => {
@@ -146,16 +147,7 @@ const Excute = async function(User,sleep,accountsPerDelay){
 
 console.log(chalk`
   {bold.cyan
-  —————————————————— [INFORMATION] ————————————————————
-
-  [?] {bold.green Unfollow Not FollowBack!}
-
-  ——————————————————  [THANKS TO]  ————————————————————
-  [✓] CODE BY CYBER SCREAMER CCOCOT (ccocot@bc0de.net)
-  [✓] FIXING & TESTING BY SYNTAX (@officialputu_id)
-  [✓] CCOCOT.CO | BC0DE.NET | NAONLAH.NET | WingkoColi
-  [✓] SGB TEAM REBORN | Zerobyte.id | ccocot@bc0de.net 
-  —————————————————————————————————————————————————————}
+  iltermedya.com.tr}
       `);
 
 inquirer.prompt(User)
