@@ -121,7 +121,7 @@ const doMain = async (User, hastag, sleep, accountsPerDelay) => {
       var media = await feed.get();
       media = _.chunk(media, accountsPerDelay);
       for (media of media) {
-        sleep = parseInt(sleep) + 250
+        sleep = parseInt(sleep) + 45
         var timeNow = new Date();
         timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
         await Promise.all(media.map(async(media)=>{
