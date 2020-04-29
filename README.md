@@ -1,4 +1,4 @@
-# ![Image](Instagram2016_white-(64px).png) Node.JS Instagram Tools
+# ![Image](Instagram2016_white-(64px).png) Node.JS Instarac
 
 
 Original author of this project is man who say himself as "CCOCOT".
