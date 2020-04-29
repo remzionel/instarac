@@ -10,8 +10,8 @@ And this is collection of several developments that have been carried out so far
 ### Installation
 
 ```
-$ git clone https://github.com/masokky/instagram-tools.git
-$ cd instagram-tools
+$ git clone https://github.com/remzionel/instarac.git
+$ cd instarac
 $ node index.js
 ```
 
@@ -26,6 +26,7 @@ $ node index.js
 * Follow Followers Target by Location
 * Follow Followers Target by People - with DM
 * Follow Followers Target by People - No Like
+* Follow Followers Target by People - No Comment
 * Follow Followers Target by People - No Comment & Like
 * Repost Media Target by People
 * Repost Media Target by Hashtag
@@ -42,8 +43,4 @@ $ node index.js
 
 ### Thanks to
 
-* CODE BY CYBER SCREAMER CCOCOT (ccocot@bc0de.net)
-* FIXING & TESTING BY SYNTAX (@officialputu_id)
-* CCOCOT.CO | BC0DE.NET | NAONLAH.NET | WingkoColi
-* SGB TEAM REBORN | Zerobyte.id | ccocot@bc0de.net
-* RMT by Mas Okky (@masokky_)
+https://www.iltermedya.com.tr
