@@ -130,7 +130,7 @@ const Excute = async function(User,sleep,accountsPerDelay){
 		console.log(chalk`{blue  | Account To Unfollow : ${AccountToUnfollow.length}}`)
 		AccountToUnfollow = _.chunk(AccountToUnfollow, accountsPerDelay);
 		for (let i = 0; i < AccountToUnfollow.length; i++) {
-            sleep = parseInt(sleep) + (i * 250)
+            sleep = parseInt(sleep) + 250
 			var timeNow = new Date();
 			timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
 			await Promise.all(AccountToUnfollow[i].map(async(akun) => {
