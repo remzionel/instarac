@@ -213,6 +213,7 @@ const Excute = async function(User, target, startFrom, customCaption, Sleep){
  	  	var result = await feed.get();
  	  	result = _.chunk(result,1);
  	  	for(var i=0;i<result.length;i++){
+            Sleep = parseInt(Sleep) + (i * 5)
  	  		await Promise.all(result[i].map(async(akun)=>{
           mediaIndex++;
           if(mediaIndex == currentMediaIndex){
